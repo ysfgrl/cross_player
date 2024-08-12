@@ -1,0 +1,32 @@
+name: cross_player
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  equatable: ^2.0.5
+  flutter_bloc: any
+  cross_player_platform_interface:
+    path: ../cross_player_platform_interface
+  cross_player_web:
+    path: ../cross_player_web
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pigeon: ^10.1.0
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        default_package: cross_player_web
